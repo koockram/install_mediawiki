@@ -42,11 +42,6 @@ Vagrant.configure("2") do |config|
       sudo ln -s mediawiki-1.32.1/ /opt/rh/httpd24/root/var/www/html/mediawiki
       sudo systemctl enable httpd24-httpd
       sudo systemctl restart httpd24-httpd
-      #
-      # Access via browser as '127.0.0.1:8025/mediawiki' and follow set up instructions
-      #
-      # Download 'LocalSettings.php' in the browser when prompted, and upload to VM as '/opt/rh/httpd24/root/var/www/html/mediawiki-1.32.1/LocalSettings.php'
-      #
     SHELL
   end
 
